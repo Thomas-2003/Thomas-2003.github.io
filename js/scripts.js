@@ -53,6 +53,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 const currenttime = document.getElementById("currenttime")
+currenttime.innerHTML = moment().format("DD.MM.YYYY hh:mm:ss");
 setInterval(() => {
     currenttime.innerHTML = moment().format("DD.MM.YYYY hh:mm:ss");
 }, 1000);
