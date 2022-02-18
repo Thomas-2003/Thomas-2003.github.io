@@ -52,3 +52,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+const currenttime = document.getElementById("currenttime")
+setInterval(() => {
+    currenttime.innerHTML = moment().format("DD.MM.YYYY hh:mm:ss");
+}, 1000);
